@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+.logo {
+  height: 160px;
+  width: auto;
+}
+
+.text-muted {
+  color: #000000;
+}
+
+/* General background color */
+body {
+    background-color: #fff7e6; /* Very light beige for a clean background */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #b37800; /* Dark golden brown */
+    color: #ffffff; /* White text */
+    width: fit-content;
+}
+
+.sidebar .list-group-item {
+    background-color: transparent;
+    color: #ffffff; /* White text */
+}
+
+.sidebar .list-group-item.active {
+    background-color: #d69a00; /* Medium golden brown */
+    color: #ffffff; /* White text */
+}
+
+/* Sidebar hover effects */
+.sidebar .list-group-item:hover {
+    background-color: #f8b400; /* Light golden yellow */
+    color: #ffffff; /* White text */
+}
+
+/* Sidebar icon colors */
+.sidebar .bi {
+    color: #000000; /* White icons */
+}
+
+/* Navbar */
+nav {
+    background-color: #f8b400; /* Light golden yellow */
+}
+
+nav .btn span {
+    color: #ffffff; /* White text */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    background-color: #fff7e6; /* Very light beige for contrast */
+    color: #b37800; /* Dark golden brown text */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8b400; /* Light golden yellow */
+    color: #ffffff; /* White text */
+}
+
+/* Main content area */
+main {
+    background-color: #ffffff; /* White background for contrast */
+}
+
+/* Card backgrounds */
+article {
+    background-color: #f8b400; /* Light golden yellow */
+    border-left-color: #d69a00; /* Medium golden brown border */
+}
+
+article h5 {
+    color: #b37800; /* Dark golden brown text */
+}
+
+article a {
+    color: #b37800; /* Dark golden brown links */
+}
+
+article a:hover {
+    color: #d69a00; /* Medium golden brown on hover */
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #ffbb00; /* Light golden yellow */
+    color: #ffffff; /* White text */
+    border-radius: 100px;
+    
+}
+
+.jumbotron .display-4 {
+    color: #000000; /* Dark golden brown */
+    margin-left: 10 px;  
+    font-weight: bold;
+}
+
+.jumbotron .lead {
+    color: #ffffff; /* White text */
+}
+
+.ml-2{
+  color: #000000;
+}
+
+.bi {
+  color: #ffffff;
+}
+
+a {
+    color: #ff9900;
+    text-decoration: none;
+    background-color: transparent;
+}
+

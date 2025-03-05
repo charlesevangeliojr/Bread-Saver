@@ -1,0 +1,120 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFC74F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px; /* Added margin at the top */
+}
+
+.signup-box {
+    width: 1000px;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 5px;
+}
+
+.signup-box-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 92%;
+}
+
+.signup-box-content h1 {
+    margin-bottom: 50px;
+    color: #FC7F00;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: flex-end; /* Align items to the end of the form */
+}
+
+.form-group {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    flex: 1 1 100%;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+form input, form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 14px;
+}
+
+form input::placeholder, form select::placeholder {
+    color: #999;
+}
+
+button {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+    flex: 1 1 100%;
+    max-width: 200px;
+    align-self: flex-end; /* Align the button to the right */
+}
+
+button:hover {
+    background-color: #FC7F00;
+}
+
+/* General message styling */
+.message {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Success message */
+.success {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb; /* Darker green border */
+}
+
+/* Error message */
+.error {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+    border: 1px solid #f5c6cb; /* Darker red border */
+}

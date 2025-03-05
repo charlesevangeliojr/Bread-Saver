@@ -1,0 +1,119 @@
+/* Main content container */
+#main-content {
+    background-color: #fd8f0050; /* White background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Section title */
+.section-title {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #070400; /* Dark golden brown text */
+    border-bottom: 2px solid #d69a00; /* Medium golden brown border */
+    padding-bottom: 10px;
+}
+
+/* Add Bread button */
+.add-bread-btn {
+    background-color: #f8b400; /* Light golden yellow */
+    border: none;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    transition: background-color 0.3s ease;
+}
+
+.add-bread-btn:hover {
+    background-color: #d69a00; /* Medium golden brown */
+}
+
+/* Bread List */
+.bread-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Bread Item */
+.bread-item {
+    margin-bottom: 10px;
+}
+
+/* Bread Card */
+.bread-card {
+    border: 2px solid #d69a00; /* Medium golden brown border */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bread-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bread Image */
+.bread-image {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    width: auto;
+}
+
+/* Bread Title */
+.bread-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000; /* Dark golden brown */
+}
+
+/* Bread Bakery */
+.bread-bakery {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Bread Price */
+.bread-price {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Bread Stock */
+.bread-stock {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Favorite Icon */
+.favorite-icon {
+    color: #b37800; /* Dark golden brown */
+    cursor: pointer;
+}
+
+.favorite-icon:hover {
+    color: #d69a00; /* Medium golden brown */
+}
+
+/* Modal Styles */
+.modal-content {
+    background-color: #ffffff; /* White background */
+    border: 2px solid #d69a00; /* Medium golden brown border */
+    border-radius: 10px;
+}
+
+.modal-header, .modal-footer {
+    background-color: #f8b400; /* Light golden yellow */
+    color: #ffffff; /* White text */
+}
+
+.modal-title {
+    color: #ffffff; /* Dark golden brown */
+}
+
+.modal-body {
+    color: #333; /* Dark text color for readability */
+}
+
+/* Make modal wider */
+.modal-dialog {
+    max-width: 600px;
+}

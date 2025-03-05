@@ -1,0 +1,602 @@
+/* Header Styles */
+header {
+    background: #f8b400;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Centering Container */
+header .container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between elements */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the container */
+    padding: 10px 20px;
+}
+
+/* Logo & Branding */
+header .logo {
+    height: 50px; /* Adjust logo size */
+    width: auto;
+}
+
+header .breadsaver {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 1px;
+}
+
+/* Navigation Menu */
+header nav {
+    display: flex;
+    justify-content: center; /* Centers menu */
+    align-items: center; /* Aligns vertically */
+    flex-grow: 1; /* Ensures menu takes up space */
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-start; /* Aligns menu items to the left */
+    align-items: center;
+    list-style: none;
+    gap: 20px; /* Space between menu items */
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* CTA Buttons */
+header .cta-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .cta {
+    background: #fff;
+    color: #f8b400;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+/* Responsive Navigation - Mobile View */
+@media (max-width: 768px) {
+    /* Container: Stack elements properly */
+    header .container {
+        flex-direction: row; /* Keeps items in one line */
+        justify-content: space-between; /* Space between burger & logo */
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Burger Menu Button */
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        margin-right: auto; /* Pushes burger to the left */
+    }
+
+    .burger div {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Hide navigation by default */
+    header nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #f8b400;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Show menu when active */
+    header nav.active {
+        display: block;
+    }
+
+    /* Navigation List */
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Move Signup & Login Buttons Inside Burger Menu */
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .cta {
+        display: block;
+        background: #fff;
+        color: #f8b400;
+        padding: 12px;
+        text-decoration: none;
+        border-radius: 15px;
+        font-size: 1em;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    overflow: hidden;
+    height: 100vh; /* Makes the section cover the full viewport height */
+}
+
+#hero .background-img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+#hero .container {
+    margin-top: 190px;
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center; /* Centers child elements vertically */
+}
+
+#hero h1 {
+    margin-top: -20px;
+    font-size: 5.5em;
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+#hero .cta-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+#hero .cta {
+    background: #f8b400;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+/* Responsive Adjustments for Hero */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    #hero .cta-buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #hero .cta {
+        padding: 10px 20px;
+    }
+}
+
+/* Other Sections */
+section {
+    padding: 60px 0;
+}
+
+#features {
+    background: #f4f4f4;
+}
+
+#features .feature-group {
+    margin-bottom: 40px;
+}
+
+#features .feature h4 {
+    margin-bottom: 10px;
+}
+
+#how-it-works {
+    text-align: center;
+}
+
+#testimonials blockquote {
+    font-style: italic;
+    border-left: 5px solid #f8b400;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social img {
+    width: 20px;
+    margin: 0 5px;
+}
+
+/* Responsive Adjustments for Footer */
+@media (max-width: 768px) {
+    footer ul {
+        flex-direction: column;
+    }
+
+    footer ul li {
+        margin: 10px 0;
+    }
+
+    footer .social img {
+        width: 30px;
+    }
+}
+
+/* Modal Customization */
+.modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height for vertical centering */
+}
+
+.modal-content {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    width: 100%; /* Full width of modal-dialog */
+    max-width: 100%; /* Prevents overflow */
+}
+
+.modal-header {
+    background-color: #f8b400;
+    color: #fff;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.modal-header .modal-title {
+    font-size: 1.5em;
+}
+
+.modal-header .btn-close {
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-body .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.modal-body .form-check-label {
+    color: #333;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: none;
+    padding-top: 20px;
+}
+
+.modal-footer .btn-primary {
+    background-color: #f8b400;
+    border-color: #f8b400;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #d69a00;
+    border-color: #d69a00;
+}
+
+.modal-footer .btn-primary:active {
+    background-color: #b37800;
+    border-color: #b37800;
+}
+
+/* Non-Centering Styles for Signup Modal */
+.signup-modal .modal-dialog {
+    /* Remove flex styles to not center the modal */
+    display: block;
+    margin: 1.75rem auto; /* Add margin if needed */
+}
+
+.signup-modal .modal-content {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    width: 100%; /* Full width of modal-dialog */
+    max-width: 500px; /* Set a max-width for better responsiveness */
+}
+
+/* Close Button Styles */
+.modal-header .btn-close {
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* Additional Classes */
+
+.btn1 {
+    background-color: #f8b400;
+    text-decoration: none;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 8px 0;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.logo1 {
+    height: 250px;
+    width: auto;
+}
+
+/* Burger Menu Button */
+.burger {
+    display: none; /* Hidden by default on desktop */
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+/* Hiding the menu by default on mobile */
+nav {
+    display: none;
+}
+
+/* Show the menu when the burger is clicked */
+nav.active {
+    display: block;
+}
+
+
+/* Show the burger menu button on mobile */
+@media (max-width: 768px) {
+    .burger {
+        display: block;
+    }
+
+    nav {
+        display: none; /* Hide the regular menu on mobile */
+    }
+
+}
+
+/* For Desktop View */
+@media (min-width: 769px) {
+    .burger {
+        display: none; /* Hide the burger menu button on larger screens */
+    }
+
+    nav {
+        display: block; /* Show the regular menu on larger screens */
+    }
+}
+
+/* Navigation Active State for Mobile */
+nav.active {
+    display: block; /* Show the navigation menu when burger is clicked */
+}
+
+/* Optional: Add styles for the animated burger button */
+.burger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.burger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start (left) */
+        padding: 10px 0; /* Adjust padding for mobile */
+        position: fixed; /* For positioning the burger button */
+    }
+
+    .breadsaver{
+        align-items: center;
+        margin: auto;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between; /* Space between logo and burger button */
+        width: 100%; /* Full width */
+    }
+
+    header .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    header .logo img {
+        height: 50px; /* Adjust logo size */
+       
+    }
+
+    header nav {
+        display: none; /* Hide the regular menu on mobile */
+    }
+
+    .burger {
+        display: block; /* Show burger button on mobile */
+        cursor: pointer; /* Push the burger button to the right */
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #fff; /* Match the header text color */
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    nav {
+        display: none; /* Hide the regular menu on mobile */
+        position: absolute;
+        top: 100%; /* Position the menu below the header */
+        left: 0;
+        width: 100%; /* Full width */
+        background: #f8b400; /* Background color for the menu */
+        padding: 10px 0; /* Padding for menu items */
+        text-align: center; /* Center align menu items */
+    }
+
+    nav.active {
+        display: block; /* Show the menu when active */
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between menu items */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-size: 1.2em; /* Adjust font size for readability */
+    }
+}
